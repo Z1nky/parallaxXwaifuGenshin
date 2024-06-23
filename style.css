@@ -1,0 +1,186 @@
+*,
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .parallax {
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .arrow-down-icon {
+        cursor: pointer;
+    }
+
+    .cta {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .title {
+        font-size: 3em;
+        font-weight: 600;
+        color: white;
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .intro {
+        background-image: url('bg-1.jpg');
+    }
+
+    .content {
+        background-image: url('bg-2.png');
+    }
+
+    .content-title{
+        width: 100%;
+        position: absolute;
+        top: 10vh;
+        text-align: center;
+    }
+
+    .center{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider{
+        width: 100%;
+        height: fit-content;
+        padding: 70px 0;
+        overflow: auto;
+    }
+
+    .slider::-webkit-scrollbar{
+        width: 80px;
+        height: 5px;
+    }
+
+    .slider::-webkit-scrollbar-thumb{
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+
+    .slider::-webkit-scrollbar-track{
+        background-color: rgb(138, 138, 138);
+    }
+
+    .cards{
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 300px;
+        height: 300px;
+        background-color: white;
+        box-shadow: 0 30px 30px rgba(0, 0, 0, .14);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .card:hover.hutao{
+        transition: all .5s ease;
+        transform: translateY(-15px) scale(1.05);
+        box-shadow: 0 20px 30px rgba(207, 17, 17, 0.5);
+    }
+    .card:hover.clorinde{
+        transition: all .5s ease;
+        transform: translateY(-15px) scale(1.05);
+        box-shadow: 0 20px 30px rgba(43, 48, 194, 0.5);
+    }
+    .card:hover.charlotte{
+        transition: all .5s ease;
+        transform: translateY(-15px) scale(1.05);
+        box-shadow: 0 20px 30px rgba(249, 8, 116, 0.5);
+    }
+    .card:hover.navia{
+        transition: all .5s ease;
+        transform: translateY(-15px) scale(1.05);
+        box-shadow: 0 20px 30px rgba(239, 202, 15, 0.5);
+    }
+    .card:hover.yanfei{
+        transition: all .5s ease;
+        transform: translateY(-15px) scale(1.05);
+        box-shadow: 0 20px 30px rgba(207, 17, 17, 0.5);
+    }
+    .card:hover.raiden{
+        transition: all .5s ease;
+        transform: translateY(-15px) scale(1.05);
+        box-shadow: 0 20px 30px rgba(189, 6, 231, 0.5);
+    }
+    
+
+    .hutao{
+        background-image: url('hutao.jpg');
+    }
+    .clorinde{
+        background-image: url('clorinde.jpg');
+    }
+    .charlotte{
+        background-image: url('charlotte.jpg');
+    }
+    .navia{
+        background-image: url('navia.jpg');
+    }
+    .yanfei{
+        background-image: url('yanfei.jpg');
+    }
+    .raiden{
+        background-image: url('raiden.jpg');
+    }
+
+    .card-title{
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+        text-shadow: 2px 5px 10px rgba(0, 0, 0, .5);
+    }
+
+    .arrow-top-icon {
+        cursor: pointer;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-image: url('bg-3.jpeg');
+    }
+
+@media screen and (max-width: 600px){
+    .title {
+        font-size: 1.5em;
+        font-weight: 600;
+        color: white;
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+}

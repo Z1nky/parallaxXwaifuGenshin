@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax With Waifu</title>
+    <!-- Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- My Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="parallax intro" id="intro">
+        <div class="cta animate__animated animate__fadeIn animate__slow">
+            <div class="title">Hello, Let's Scroll Down</div>
+            <div class="arrow-down-icon animate__animated animate__pulse animate__infinite">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40px" viewBox="0 -960 960 960" fill="#fff">
+                    <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="parallax content" id="content">
+        <div class="content-title title">Choose Your Waifu</div>
+        <div class="center">
+            <div class="slider">
+                <div class="cards">
+                    <div class="card hutao" onclick="clickWaifu('Hu Tao')">
+                        <div class="card-title">Hu Tao</div>
+                    </div>
+                    <div class="card clorinde" onclick="clickWaifu('Clorinde')">
+                        <div class="card-title">Clorinde</div>
+                    </div>
+                    <div class="card charlotte" onclick="clickWaifu('Charlotte')">
+                        <div class="card-title">Charlotte</div>
+                    </div>
+                    <div class="card navia" onclick="clickWaifu('Navia')">
+                        <div class="card-title">Navia</div>
+                    </div>
+                    <div class="card yanfei" onclick="clickWaifu('Yan fei')">
+                        <div class="card-title">Yan Fei</div>
+                    </div>
+                    <div class="card raiden" onclick="clickWaifu('Raiden')">
+                        <div class="card-title">Raiden</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax footer" id="footer">
+        <div class="title">Back To Top</div>
+        <div class="arrow-top-icon animate__animated animate__pulse animate__infinite">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="40px" fill="#fff">
+                <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+            </svg>
+        </div>
+    </div>
+
+    <script>
+        const arrowDown = document.querySelector('.arrow-down-icon');
+        const arrowTop = document.querySelector('.arrow-top-icon');
+        arrowDown.addEventListener('click', () => {
+            window.location.href = '#content';
+        });
+
+        arrowTop.addEventListener('click', () => {
+            window.location.href = '#intro';
+        })
+
+        function clickWaifu(waifu) {
+            alert(`You choosed ${waifu}`);
+        }
+    </script>
+</body>
+
+</html>
