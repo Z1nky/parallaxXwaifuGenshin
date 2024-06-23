@@ -38,11 +38,11 @@
     }
 
     .intro {
-        background-image: url('bg-1.jpg');
+        background-image: url('img/bg-1.jpg');
     }
 
     .content {
-        background-image: url('bg-2.png');
+        background-image: url('img/bg-2.png');
     }
 
     .content-title{
@@ -138,22 +138,22 @@
     
 
     .hutao{
-        background-image: url('hutao.jpg');
+        background-image: url('img/hutao.jpg');
     }
     .clorinde{
-        background-image: url('clorinde.jpg');
+        background-image: url('img/clorinde.jpg');
     }
     .charlotte{
-        background-image: url('charlotte.jpg');
+        background-image: url('img/charlotte.jpg');
     }
     .navia{
-        background-image: url('navia.jpg');
+        background-image: url('img/navia.jpg');
     }
     .yanfei{
-        background-image: url('yanfei.jpg');
+        background-image: url('img/yanfei.jpg');
     }
     .raiden{
-        background-image: url('raiden.jpg');
+        background-image: url('img/raiden.jpg');
     }
 
     .card-title{
@@ -173,7 +173,7 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        background-image: url('bg-3.jpeg');
+        background-image: url('img/bg-3.jpeg');
     }
 
 @media screen and (max-width: 600px){
